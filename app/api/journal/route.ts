@@ -10,6 +10,5 @@ export const POST = async () => {
       content: 'Write about your day',
     },
   })
-  console.log('--------------------LOG5', entry)
   return NextResponse.json({ data: entry })
 }

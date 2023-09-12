@@ -5,9 +5,7 @@ import { useRouter } from "next/navigation";
 const NewEntryCard = () => {
   const router = useRouter();
   const handleOnClick = async () => {
-    console.log("------------Log1");
-    const  data  = await createNewEntry();
-    console.log("-----------------Log2");
+    const data = await createNewEntry();
     router.push(`/journal/${data.id}`);
   };
 
